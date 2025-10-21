@@ -1,0 +1,71 @@
+.Whyus {
+    width: 100%;
+    margin-bottom: 80px;
+
+    .us {
+        margin: 0px 60px;
+        background-color: #fd00ad;
+        border-radius: 12px;
+        padding: 40px;
+        // border: 1px solid #fd00ad;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 14px;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        .Why {
+            display: flex;
+            gap: 30px;
+            color: #fff;
+            height: 520px;
+
+            .title {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    width: 80%;
+                    border-radius: 12px;
+                }
+            }
+
+            .list {
+                width: 45%;
+                ol {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 24px;
+                    justify-content: center;
+
+                    li {
+                        padding: 20px
+                    }
+                    
+                    .line {
+                        border-bottom: 3px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}

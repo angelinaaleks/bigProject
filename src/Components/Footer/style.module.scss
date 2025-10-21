@@ -1,0 +1,89 @@
+.Fotter {
+    margin: 40px 60px 0px 60px;
+    background-color: #373737;
+    padding: 40px;
+    border-radius: 12px;
+    height: 250px;
+
+    .fotterTop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 20px;
+
+        button {
+            font-size: 32px;
+            border: 2px solid #fd00ad;
+            border-radius: 32px;
+            width: 300px;
+            height: 80px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .Online {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                color: #fff;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .link {
+                display: flex;
+                gap: 30px;
+
+                a {
+                    color: #fff;
+                    border: 2px solid #fd00ad;
+                    border-radius: 24px;
+                    font-size: 32px;
+                    padding: 10px 35px;
+                }
+            }
+        }
+    }
+
+    .fotterBottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        color:#fff;
+        .logo {
+            display: flex;
+            height: 90%;
+            border-radius: 25px;
+            padding: 3px 15px;
+
+            .ANN {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 1.4em;
+                    padding-right: 15px;
+                    border-right: 6px solid #fd00ad;
+                    height: 1.4em;
+                    color: #fff;
+                }
+            }
+
+            h2 {
+                font-weight: 650;
+                font-size: 1.1em;
+                padding-left: 15px;
+                height: 1em;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                color: #fff;
+            }
+        }
+    }
+}

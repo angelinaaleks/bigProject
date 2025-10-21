@@ -1,0 +1,112 @@
+.HeaderPlus {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 25px;
+        height: 7ch;
+
+        .leftButtons {
+            display: flex;
+            width: 33%;
+            gap: 15px;
+
+            button {
+                background-color: #e7e7e76f;
+                border-radius: 25px;
+                padding: 0px 15px;
+                margin: 2%;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+
+        .centerLogo {
+            display: flex;
+            height: 90%;
+            background-color: #373737;
+            border-radius: 25px;
+            padding: 3px 15px;
+
+            .ANN {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 1.4em;
+                    padding-right: 15px;
+                    border-right: 6px solid #fd00ad;
+                    height: 1.4em;
+                    color: #fff;
+                }
+            }
+
+            h2 {
+                font-weight: 650;
+                font-size: 1.1em;
+                padding-left: 15px;
+                height: 1em;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                color: #fff;
+            }
+        }
+
+        .rightButtons {
+            display: flex;
+            width: 33%;
+            gap: 15px;
+
+            button {
+                background-color: #e7e7e76f;
+                border-radius: 25px;
+                padding: 0px 15px;
+                margin: 2%;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            .svize {
+                background-color: #fff;
+                border: 2px solid #805207a3;
+                border-radius: 25px;
+                padding: 0px 15px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    .Coors {
+        color: #fd00ad;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .buttonNoChoise {
+            font-weight: 700;
+            border: 2px solid #fd00ad;
+            border-radius: 32px;
+            padding: 10px 30px;
+            color: #fd00ad;
+
+            &:hover {
+                background-color: #fd00ad;
+                color: #fff;
+            }
+        }
+
+        .buttonChoise {
+            font-weight: 700;
+            background-color: #fd00ad;
+            color: #fff;
+            border-radius: 32px;
+            padding: 10px 30px;
+        }
+    }
+}

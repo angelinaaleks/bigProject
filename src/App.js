@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card/Card';
+import Fotter from './Components/Footer/Fotter';
+import Header from './Components/Header/Header';
+import Main from './Components/Main/Main';
+import Stocks from './Components/Stocks/Stocks';
+import Whyus from './Components/Whyus/Whyus';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+function Student() {
+  return (
+    <div>
+      <Main />
+      <Stocks />
+      <Whyus />
+      <Card />
+      <Fotter />
+    </div>
+  )
+}
+
+function Client() {
+  return (
+    <div>
+      <h1>Тут пока ничего нет приходите позже</h1>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Student />} />
+          <Route path='/client' element={<Client />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
