@@ -1,0 +1,27 @@
+.Card {
+    padding: 0px 60px;
+
+    @media(max-width: 1000px) {
+        padding: 0px 30px;
+    }
+
+    @media(max-width: 500px) {
+        padding: 0px 10px;
+    }
+
+    iframe {
+        border-radius: 16px;
+
+        @media(max-width: 1000px) {
+            height: 400px;
+        }
+
+        @media(max-width: 700px) {
+            height: 300px;
+        }
+
+        @media(max-width: 700px) {
+            height: 200px;
+        }
+    }
+}

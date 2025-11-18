@@ -1,0 +1,70 @@
+.logo {
+    background-color: #373737;
+    height: 100%;
+    border-radius: 60px;
+    padding: 5px 60px;
+    
+    @media(max-width: 900px) {
+        padding: 3px 30px;
+    }
+
+    @media(max-width: 600px) {
+        padding: 3px 15px;
+    }
+}
+
+.poopLists {
+    display: flex;
+    padding: 0px 60px;
+    @media (max-width: 600px) {
+        padding: 0px 20px;
+    }
+    .poop {
+        width: 200px;
+        position: absolute;
+        right: 60px;
+
+        @media(max-width: 800px) {
+            width: 150px;
+            right: 20px;
+        }
+
+        @media(max-width: 600px) {
+            right: 0px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 16px; 
+            @media(max-width: 600px) {
+                font-size: 14px;
+            }  
+        }
+        .MapPoop {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(199, 199, 199);
+            border-radius: 20px;
+
+            .MapPoopSs {
+                padding: 15px 10px;
+                font-size: 16px;
+                border-radius: 20px;
+
+                @media(max-width: 800px) {
+                    font-size: 12px;
+                    padding: 10px 5px;
+                }
+
+                &:hover {
+                    background-color: aliceblue;
+                }
+            }
+            .MapPoopSsNo {
+                display: none;
+            }
+        }
+    }
+    @media(min-width: 901px) {
+        display: none;
+    }
+}

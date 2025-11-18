@@ -1,9 +1,35 @@
 .Fotter {
-    margin: 40px 60px 0px 60px;
+    margin: 40px 60px 20px 60px;
     background-color: #373737;
     padding: 40px;
     border-radius: 12px;
-    height: 250px;
+    height: 300px;
+
+    @media(max-width: 1950px) {
+        height: 250px;
+    }
+
+    @media(max-width: 1550px) {
+        height: 220px;
+        padding: 30px;
+    }
+
+    @media(max-width: 1250px) {
+        height: 180px;
+        padding: 20px;
+    }
+
+    @media(max-width: 1000px) {
+        margin: 10px 30px;
+    }
+
+    @media(max-width: 700px) {
+        height: 120px;
+    }
+
+    @media(max-width: 500px) {
+        margin: 10px;
+    }
 
     .fotterTop {
         display: flex;
@@ -12,14 +38,8 @@
         border-bottom: 2px solid #fff;
         padding-bottom: 20px;
 
-        button {
-            font-size: 32px;
-            border: 2px solid #fd00ad;
-            border-radius: 32px;
-            width: 300px;
-            height: 80px;
-            color: #fff;
-            font-weight: 700;
+        @media(max-width: 1550px) {
+            padding-bottom: 10px;
         }
 
         .Online {
@@ -31,18 +51,74 @@
                 color: #fff;
                 font-size: 24px;
                 margin-bottom: 15px;
+
+                @media(max-width: 1950px) {
+                    font-size: 18px;
+                }
+
+                @media(max-width: 1550px) {
+                    font-size: 16px;
+                }
+
+                @media(max-width: 1250px) {
+                    font-size: 12px;
+                }
+
+                @media(max-width: 700px) {
+                    font-size: 8px;
+                }
             }
 
             .link {
                 display: flex;
                 gap: 30px;
 
-                a {
+                @media(max-width: 700px) {
+                    gap: 15px;
+                    height: 30px;
+                }
+
+                @media(max-width: 700px) {
+                    gap: 7px;
+                }
+
+                a, p {
                     color: #fff;
                     border: 2px solid #fd00ad;
                     border-radius: 24px;
                     font-size: 32px;
+                    height: 70px;
                     padding: 10px 35px;
+
+                    @media(max-width: 1950px) {
+                        font-size: 26px;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+
+                    @media(max-width: 1550px) {
+                        font-size: 20px;
+                        height: 50px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 14px;
+                        height: 40px;
+                    }
+
+                    @media(max-width: 700px) {
+                        font-size: 10px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 15px;
+                    }
+
+                    @media(max-width: 500px) {
+                        font-size: 6px;
+                        height: 24px;
+                        padding: 5px 10px;
+                    }
                 }
             }
         }
@@ -50,40 +126,16 @@
 
     .fotterBottom {
         display: flex;
-        justify-content: space-between;
         padding-top: 20px;
         color:#fff;
-        .logo {
-            display: flex;
-            height: 90%;
-            border-radius: 25px;
-            padding: 3px 15px;
 
-            .ANN {
-                height: 100%;
-                display: flex;
-                align-items: center;
+        @media(max-width: 1250px) {
+            padding-top: 10px;
+            font-size: 14px;
+        }
 
-                h1 {
-                    font-weight: 900;
-                    font-size: 1.4em;
-                    padding-right: 15px;
-                    border-right: 6px solid #fd00ad;
-                    height: 1.4em;
-                    color: #fff;
-                }
-            }
-
-            h2 {
-                font-weight: 650;
-                font-size: 1.1em;
-                padding-left: 15px;
-                height: 1em;
-                display: flex;
-                align-items: center;
-                height: 100%;
-                color: #fff;
-            }
+        @media(max-width: 700px) {
+            font-size: 10px;
         }
     }
 }

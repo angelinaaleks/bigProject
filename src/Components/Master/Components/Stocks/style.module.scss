@@ -1,0 +1,452 @@
+.Stocks {
+    height: 1200px;
+    position: relative;
+    margin-bottom: 80px;
+
+    @media(max-width: 1950px) {
+        height: 1000px;
+    }
+
+    @media(max-width: 1600px) {
+        height: 800px;
+    }
+
+    @media(max-width: 1250px) {
+        height: 550px;
+    }
+
+    @media(max-width: 1000px) {
+        height: 480px;
+    }
+
+    @media(max-width: 800px) {
+        height: 350px;
+        margin-bottom: 40px;
+    }
+
+    @media(max-width: 600px) {
+        height: 650px;
+    }
+
+    .StocksText {
+        height: 600px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        .imgLeft {
+            object-fit: cover;
+            object-position: right;
+            width: 500px;
+            top: 0px;
+            height: 1000px;
+            position: absolute;
+            left: 0px;
+
+            @media(max-width: 1950px) {
+                height: 800px;
+                width: 400px;
+            }
+
+            @media(max-width: 1600px) {
+                height: 600px;
+                width: 300px;
+            }
+
+            @media(max-width: 1250px) {
+                height: 400px;
+                width: 200px;
+            }
+
+            @media(max-width: 800px) {
+                height: 200px;
+                width: 100px;
+            }
+        }
+
+        .Text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                @media(max-width: 1950px) {
+                    font-size: 52px;
+                }
+
+                @media(max-width: 1600px) {
+                    font-size: 46px;
+                }
+
+                @media(max-width: 1250px) {
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                }
+
+                @media(max-width: 1000px) {
+                    font-size: 30px;
+                    margin-bottom: 0px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 22px;
+                }
+            }
+
+            h2 {
+                font-size: 72px;
+                font-weight: 500;
+                color: #fd00ad;
+                margin-bottom: 60px;
+
+                @media(max-width: 1950px) {
+                    font-size: 60px;
+                    margin-bottom: 40px;
+                }
+
+                @media(max-width: 1600px) {
+                    font-size: 52px;
+                    margin-bottom: 20px;
+                }
+
+                @media(max-width: 1250px) {
+                    font-size: 44px;
+                    margin-bottom: 10px;
+                }
+
+                @media(max-width: 1000px) {
+                    font-size: 36px;
+                    margin-bottom: 0px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 24px;
+                }
+            }
+
+            p {
+                font-size: 32px;
+                text-transform: uppercase;
+                font-weight: 450;
+
+                @media(max-width: 1950px) {
+                    font-size: 28px;
+                }
+
+                @media(max-width: 1600px) {
+                    font-size: 22px;
+                }
+
+                @media(max-width: 1250px) {
+                    font-size: 16px;
+                }
+
+                @media(max-width: 1000px) {
+                    font-size: 12px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 8px;
+                }
+            }
+
+            h3 {
+                font-size: 48px;
+                font-weight: 600;
+
+                @media(max-width: 1950px) {
+                    font-size: 40px;
+                }
+
+                @media(max-width: 1600px) {
+                    font-size: 32px;
+                }
+
+                @media(max-width: 1250px) {
+                    font-size: 26px;
+                }
+
+                @media(max-width: 1000px) {
+                    font-size: 20px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .imgRight {
+            object-fit: cover;
+            width: 470px;
+            object-position: left;
+            top: 0px;
+            height: 1000px;
+            position: absolute;
+            right: 0px;
+
+            @media(max-width: 1950px) {
+                height: 800px;
+                width: 380px;
+            }
+
+            @media(max-width: 1600px) {
+                height: 600px;
+                width: 280px;
+            }
+
+            @media(max-width: 1250px) {
+                height: 400px;
+                width: 190px;
+            }
+
+            @media(max-width: 800px) {
+                height: 200px;
+                width: 95px;
+            }
+        }
+    }
+
+    .stocksSpisok {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+
+        @media(max-width: 600px) {
+            flex-wrap: nowrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 'a b' 'c c';
+            justify-content: center;
+            padding: 0px 10px;
+        }
+
+        .eyebrowPlus,
+        .eyelashes,
+        .unibrow {
+            height: 700px;
+            // background-color: #fd00ad;
+            width: 30%;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            border: 2px solid #fd00ad;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            @media(max-width: 1950px) {
+                height: 550px;
+            }
+
+            @media(max-width: 1950px) {
+                height: 450px;
+            }
+
+            @media(max-width: 1250px) {
+                height: 300px;
+            }
+
+            @media(max-width: 800px) {
+                height: 200px;
+            }
+
+            @media(max-width: 600px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
+                top: -20px;
+                object-fit: cover;
+                height: 420px;
+                z-index: 0;
+                border-radius: 12px;
+
+                @media(max-width: 1950px) {
+                    height: 320px;
+                }
+
+                @media(max-width: 1600px) {
+                    height: 240px;
+                }
+
+                @media(max-width: 1250px) {
+                    height: 170px;
+                }
+
+                @media(max-width: 800px) {
+                    height: 100px;
+                }
+
+                @media(max-width: 600px) {
+                    height: 120px;
+                }
+            }
+
+            .eyebrowText, .eyelashesText, .unibrowText {
+                padding: 0px 15px;
+
+                h4 {
+                    font-size: 28px;
+                    font-weight: 700;
+
+                    @media(max-width: 2400px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 16px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 6px;
+                    }
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+
+                    @media(max-width: 2400px) {
+                        font-size: 28px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 14px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 8px;
+                    }
+                }
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #fd00ad;
+
+                    @media(max-width: 2400px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 16px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 6px;
+                    }
+
+                    span {
+                        color: #000;
+                        text-decoration: line-through;
+                    }
+                }
+
+                ul {
+                    column-count: 2;
+
+                    li {
+                        // list-style-type: '+' !important;
+                        border: 1px solid #fd00ad;
+                        border-radius: 6px;
+                        margin-bottom: 10px;
+                        font-size: 24px;
+                        font-weight: 500;
+
+                        @media(max-width: 2400px) {
+                            font-size: 20px;
+                        }
+
+                        @media(max-width: 1950px) {
+                            font-size: 16px;
+                        }
+
+                        @media(max-width: 1600px) {
+                            font-size: 14px;
+                        }
+
+                        @media(max-width: 1250px) {
+                            font-size: 8px;
+                        }
+
+                        @media(max-width: 800px) {
+                            font-size: 6px;
+                        }
+                    }
+                }
+
+
+            }
+
+            &:hover {
+                background-color: #fd00ad;
+
+                h3 {
+                    color: #fff;
+                }
+
+                li {
+                    color: #fff;
+                }
+
+            }
+        }
+
+        .eyebrowPlus {
+            grid-area: a;
+        }
+        .eyelashes {
+            grid-area: b;
+        }
+        .unibrow {
+            grid-area: c;
+
+            @media(max-width: 600px) {
+                height: 280px;
+
+                img {
+                    height: 190px;
+                }
+            }
+        }
+    }
+}

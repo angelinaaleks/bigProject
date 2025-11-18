@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss"
-import whyus from "../../img/whyus2.gif"
+import whyus from "../../../../img/whyus2.gif"
 
 function Whyus() {
     return (
@@ -11,7 +11,7 @@ function Whyus() {
                     <div className={styles.title}>
                         <h2>Хватит мечтать о деле, которое приносит и доход, и удовольствие. Пришло время его создать.</h2>
                         <p>Мы не просто учим технике. Мы помогаем построить карьеру, где вы сами управляете своим временем и доходом. Представьте: вы не «ходите на работу», а создаете красоту, получая за это от 80 000 рублей в месяц и благодарные взгляды клиентов. Это не фантастика, а реальный результат наших выпускников.</p>
-                        <img src={whyus} />
+                        <img alt="Собачка" src={whyus} />
                     </div>
                     <div className={styles.list}>
                         <ol>

@@ -1,27 +1,27 @@
 import React from "react";
 import styles from "./style.module.scss"
-import stocks from "../../img/stocks.jpg"
-import eyebrow from "../../img/eyebrow.jpg"
-import eyelash from "../../img/eyelashes.jpg"
-import unibrowimg from "../../img/unibrow.jpg"
+import stocks from "../../../../img/stocks.jpg"
+import eyebrow from "../../../../img/eyebrow.jpg"
+import eyelash from "../../../../img/eyelashes.jpg"
+import unibrowimg from "../../../../img/unibrow.jpg"
 
 function Stocks() {
     return (
         <div>
             <div className={styles.Stocks}>
                 <div className={styles.StocksText}>
-                    <img className={styles.imgLeft} src={stocks} />
+                    <img alt="Бантик" className={styles.imgLeft} src={stocks} />
                     <div className={styles.Text}>
                         <h1>Твой месяц для старта!</h1>
                         <h2>Определи свой путь к успеху</h2>
                         <p>Индивидуальное обучение.</p>
                         <h3>Только ты, мастер и результат</h3>
                     </div>
-                    <img className={styles.imgRight} src={stocks} />
+                    <img alt="Бантик" className={styles.imgRight} src={stocks} />
                 </div>
                 <div className={styles.stocksSpisok}>
                     <div className={styles.eyebrowPlus}>
-                        <img src={eyebrow} />
+                        <img alt="Брови" src={eyebrow} />
                         <div className={styles.eyebrowText}>
                             <h4>1 day / 12 academic hours</h4>
                             <h2>Интенсив "Бровист-PRO"</h2>
@@ -36,7 +36,7 @@ function Stocks() {
                         </div>
                     </div>
                     <div className={styles.eyelashes}>
-                        <img src={eyelash} />
+                        <img alt="Ресницы" src={eyelash} />
                         <div className={styles.eyelashesText}>
                             <h4>3 day / 26 academic hours</h4>
                             <h2>Lashmaker</h2>
@@ -50,7 +50,7 @@ function Stocks() {
                         </div>
                     </div>
                     <div className={styles.unibrow}>
-                        <img src={unibrowimg}/>
+                        <img alt="Брови-Ресницы" src={unibrowimg}/>
                         <div className={styles.unibrowText}>
                             <h4>5 day / 40 academic hours</h4>
                             <h2>КУРС «UNIBROW LASH»</h2>
