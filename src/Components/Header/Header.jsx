@@ -29,7 +29,7 @@ function Header() {
           <Link to="/allcoors" className={styles.linkBtn}>
             {navig[1]}
           </Link>
-          <button className={styles.linkBtn}>{navig[3]}</button>
+          <button className={styles.linkBtn}>{navig[2]}</button>
         </div>
         <div className={styles.logo}>
           <Logo />
