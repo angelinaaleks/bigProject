@@ -1,10 +1,10 @@
 .Stocks {
-    height: 1200px;
+    height: 1300px;
     position: relative;
     margin-bottom: 80px;
 
     @media(max-width: 1950px) {
-        height: 1000px;
+        height: 1070px;
     }
 
     @media(max-width: 1600px) {
@@ -12,20 +12,20 @@
     }
 
     @media(max-width: 1250px) {
-        height: 550px;
+        height: 570px;
     }
 
     @media(max-width: 1000px) {
-        height: 480px;
+        height: 500px;
     }
 
     @media(max-width: 800px) {
-        height: 900px;
+        height: 950px;
         margin-bottom: 40px;
     }
 
-    @media(max-width: 600px) {
-        height: 1000px;
+    @media(max-width: 550px) {
+        height: 1050px;
     }
 
     .StocksText {
@@ -221,7 +221,19 @@
         gap: 15px;
         justify-content: center;
         position: absolute;
-        bottom: 0px;
+        bottom: 100px;
+
+        @media(max-width: 1600px) {
+            bottom: 80px;
+        }
+
+        @media(max-width: 1250px) {
+            bottom: 70px;
+        }
+
+        @media(max-width: 1000px) {
+            bottom: 55px;
+        }
 
         @media(max-width: 800px) {
             flex-wrap: nowrap;
@@ -461,6 +473,45 @@
         }
         .unibrow {
             grid-area: c;
+        }
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        button {
+            background-color: #fd00ad;
+            padding: 10px 40px;
+            color: #fff;
+            border-radius: 40px;
+            font-size: 56px;
+
+            @media(max-width: 1950px) {
+                font-size: 48px;
+                padding: 7px 30px;
+                border-radius: 35px;
+            }
+
+            @media(max-width: 1600px) {
+                font-size: 40px;
+                padding: 7px 30px;
+                border-radius: 35px;
+            }
+
+            @media(max-width: 1250px) {
+                font-size: 32px;
+                padding: 5px 25px;
+                border-radius: 25px;
+            }
+
+            @media(max-width: 1000px) {
+                font-size: 28px;
+                padding: 5px 25px;
+                border-radius: 25px;
+            }
         }
     }
 }

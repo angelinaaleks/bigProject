@@ -1,18 +1,18 @@
-import React from "react";
-import Main from "./Components/Main/Main";
-import Stocks from "./Components/Stocks/Stocks";
-import Whyus from "./Components/Whyus/Whyus"
-import Card from "./Components/Map/Map"
+import React from 'react';
+import Main from './Components/Main/Main';
+import Stocks from './Components/Stocks/Stocks';
+import Whyus from './Components/Whyus/Whyus';
+import Card from './Components/Map/Map';
 
-function Master() {
-    return (
-        <div>
-            <Main />
-            <Stocks />
-            <Whyus />
-            <Card />
-        </div>
-    )
+function Master({ handleWhatsAppClick }) {
+  return (
+    <div>
+      <Main handleWhatsAppClick={handleWhatsAppClick} />
+      <Stocks />
+      <Whyus />
+      <Card />
+    </div>
+  );
 }
 
 export default Master;

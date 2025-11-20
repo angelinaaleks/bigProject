@@ -4,7 +4,7 @@ import mainRight from '../../../../img/main-right.png';
 import galka from '../../../../img/galka.png';
 import Logo from '../../../Logo/Logo';
 
-function Main() {
+function Main({ handleWhatsAppClick }) {
   return (
     <div className={styles.Main}>
       <div className={styles.leftMain}>
@@ -45,7 +45,7 @@ function Main() {
           </ul>
         </div>
         <div className={styles.form}>
-          <button>Написать в Whatsapp</button>
+          <button onClick={handleWhatsAppClick}>Написать в Whatsapp</button>
         </div>
       </div>
       <div className={styles.rightMain}>
