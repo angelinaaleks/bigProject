@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './style.module.scss';
-import stocks from '../../../../img/stocks.jpg';
-import eyebrow from '../../../../img/eyebrow.jpg';
-import eyelash from '../../../../img/eyelashes.jpg';
-import unibrowimg from '../../../../img/unibrow.jpg';
+import stocks from '../../../../Static/img/stocks.jpg';
+import eyebrow from '../../../../Static/img/eyebrow.jpg';
+import eyelash from '../../../../Static/img/eyelashes.jpg';
+import unibrowimg from '../../../../Static/img/unibrow.jpg';
 
 function Stocks() {
   return (

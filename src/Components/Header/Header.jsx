@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
 import Logo from '../Logo/Logo';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Category } from '../Category/Category';
 
 function Header({ handleWhatsAppClick }) {
@@ -17,13 +17,14 @@ function Header({ handleWhatsAppClick }) {
           <Link to="/allcoors" className={styles.linkBtn}>
             {navig[1]}
           </Link>
-          <button className={styles.linkBtn}>{navig[2]}</button>
         </div>
         <div className={styles.logo}>
           <Logo />
         </div>
         <div className={styles.rightButtons}>
-          <button>Для моделей</button>
+          <Link to="/models" className={styles.linkBtn}>
+            Для моделей
+          </Link>
           <button onClick={handleWhatsAppClick} className={styles.svize}>
             {navig[4]}
           </button>

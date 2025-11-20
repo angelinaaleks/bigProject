@@ -1,0 +1,212 @@
+.eyebrowPlus {
+            height: 700px;
+            // background-color: #fd00ad;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            border: 2px solid #fd00ad;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            @media(max-width: 1950px) {
+                height: 550px;
+            }
+
+            @media(max-width: 1600px) {
+                height: 450px;
+            }
+
+            @media(max-width: 1250px) {
+                height: 300px;
+            }
+
+            @media(max-width: 800px) {
+                width: 100%;
+                height: 400px;
+            }
+
+            @media(max-width: 550px) {
+                height: 320px;
+            }
+
+            img {
+                width: 100%;
+                position: absolute;
+                top: -20px;
+                object-fit: cover;
+                height: 420px;
+                z-index: 0;
+                border-radius: 12px;
+
+                @media(max-width: 1950px) {
+                    height: 300px;
+                }
+
+                @media(max-width: 1600px) {
+                    height: 240px;
+                }
+
+                @media(max-width: 1250px) {
+                    height: 170px;
+                }
+
+                @media(max-width: 800px) {
+                    height: 230px;
+                }
+
+                @media(max-width: 550px) {
+                    height: 180px;
+                }
+            }
+
+            .eyebrowText, .eyelashesText, .unibrowText {
+                padding: 0px 15px;
+
+                h4 {
+                    font-size: 28px;
+                    font-weight: 700;
+
+                    @media(max-width: 2400px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 16px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 550px) {
+                        font-size: 10px;
+                    }
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+
+                    @media(max-width: 2400px) {
+                        font-size: 28px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 14px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 14px;
+                    }
+
+                    @media(max-width: 550px) {
+                        font-size: 12px;
+                    }
+                }
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #fd00ad;
+
+                    @media(max-width: 2400px) {
+                        font-size: 24px;
+                    }
+
+                    @media(max-width: 1950px) {
+                        font-size: 20px;
+                    }
+
+                    @media(max-width: 1600px) {
+                        font-size: 16px;
+                    }
+
+                    @media(max-width: 1250px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width: 550px) {
+                        font-size: 10px;
+                    }
+
+                    span {
+                        color: #000;
+                        text-decoration: line-through;
+                    }
+                }
+
+                ul {
+                    column-count: 2;
+
+                    li {
+                        // list-style-type: '+' !important;
+                        border: 1px solid #fd00ad;
+                        border-radius: 6px;
+                        margin-bottom: 10px;
+                        font-size: 24px;
+                        font-weight: 500;
+
+                        @media(max-width: 2400px) {
+                            font-size: 20px;
+                        }
+
+                        @media(max-width: 1950px) {
+                            font-size: 16px;
+                        }
+
+                        @media(max-width: 1600px) {
+                            font-size: 14px;
+                        }
+
+                        @media(max-width: 1250px) {
+                            font-size: 8px;
+                        }
+
+                        @media(max-width: 800px) {
+                            font-size: 11px;
+                        }
+
+                        @media(max-width: 550px) {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+
+            }
+
+            &:hover {
+                background-color: #fd00ad;
+
+                h3 {
+                    color: #fff;
+                }
+
+                li {
+                    color: #fff;
+                }
+
+            }
+        }

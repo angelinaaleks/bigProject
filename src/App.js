@@ -1,10 +1,11 @@
 import './App.css';
-import Client from './Components/Client/Client';
 import Fotter from './Components/Footer/Fotter';
 import Header from './Components/Header/Header';
+import { AllCoors } from './Components/Master/Components/AllCoors/AllCoors';
 import Master from './Components/Master/Master';
-import Allcoors from './Components/Allcoors/Allcoors';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Coors from './Static/Coors.json';
+import { Models } from './Components/Models/Models';
 
 function App() {
 
@@ -24,8 +25,12 @@ function App() {
                 <Header handleWhatsAppClick={handleWhatsAppClick} />
                 <Routes>
                     <Route path='/' element={<Master handleWhatsAppClick={handleWhatsAppClick} />} />
-                    {/* <Route path='/client' element={<Client />} /> */}
-                    <Route path='/allcoors' element={<Allcoors />} />
+                    <Route path='/allCoors' element={<div className='AllCoors'>
+                        {
+                            Coors.map((value) => (<AllCoors {...value} />))
+                        }
+                    </div>}></Route>
+                    <Route path='/models' element={<Models />}></Route>
                 </Routes>
                 <Fotter />
             </div>

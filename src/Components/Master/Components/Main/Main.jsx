@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
-import mainRight from '../../../../img/main-right.png';
-import galka from '../../../../img/galka.png';
+import mainRight from '../../../../Static/img/main-right.png';
+import galka from '../../../../Static/img/galka.png';
 import Logo from '../../../Logo/Logo';
 
 function Main({ handleWhatsAppClick }) {

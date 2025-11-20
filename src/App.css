@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+.AllCoors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 80px 100px;
+
+    @media(max-width: 1900px) {
+        padding: 80px 70px;
+    }
+
+    @media(max-width: 1500px) {
+        padding: 40px 70px;
+    }
+
+    @media(max-width: 1300px) {
+        gap: 20px;
+        padding: 40px 50px;
+    }
+
+    @media(max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 800px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
