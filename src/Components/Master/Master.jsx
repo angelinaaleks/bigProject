@@ -7,7 +7,7 @@ import Card from './Components/Map/Map';
 function Master({ handleWhatsAppClick }) {
   return (
     <div>
-      <Main handleWhatsAppClick={handleWhatsAppClick} />
+      <Main />
       <Stocks />
       <Whyus />
       <Card />

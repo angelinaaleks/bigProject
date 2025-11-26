@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './style.module.scss';
 import stocks from '../../../../Static/img/stocks.jpg';
 import eyebrow from '../../../../Static/img/eyebrow.jpg';
@@ -71,7 +72,9 @@ function Stocks() {
           </div>
         </div>
         <div className={styles.button}>
-          <button>Все курсы</button>
+          <Link to="/allcoors" className={styles.link}>
+            Все курсы
+          </Link>
         </div>
       </div>
     </div>

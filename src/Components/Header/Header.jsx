@@ -3,9 +3,11 @@ import styles from './style.module.scss';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom';
 import { Category } from '../Category/Category';
+import { AppContext } from '../../App';
 
-function Header({ handleWhatsAppClick }) {
+function Header() {
   const navig = ['Главная', 'Все курсы', 'Преимущества', 'Для моделей', 'Написать в Whatsapp'];
+  const handleWhatsAppClick = React.useContext(AppContext);
 
   return (
     <div className={styles.HeaderPlus}>

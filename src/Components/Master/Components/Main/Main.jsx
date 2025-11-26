@@ -3,8 +3,10 @@ import styles from './style.module.scss';
 import mainRight from '../../../../Static/img/main-right.png';
 import galka from '../../../../Static/img/galka.png';
 import Logo from '../../../Logo/Logo';
+import { AppContext } from '../../../../App';
 
-function Main({ handleWhatsAppClick }) {
+function Main() {
+  const handleWhatsAppClick = React.useContext(AppContext);
   return (
     <div className={styles.Main}>
       <div className={styles.leftMain}>

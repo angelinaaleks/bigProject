@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './style.module.scss';
 import Logo from '../Logo/Logo';
+import { AppContext } from '../../App';
 
 function Fotter() {
+  const handleWhatsAppClick = React.useContext(AppContext);
   return (
     <div className={styles.Fotter}>
       <div className={styles.fotterTop}>
@@ -10,7 +12,7 @@ function Fotter() {
         <div className={styles.Online}>
           <p>г. Казань, ул. Лушникова, д. 8</p>
           <div className={styles.link}>
-            <a href="https://wa.me/89991631929">WhatsApp</a>
+            <button onClick={handleWhatsAppClick}>WhatsApp</button>
             <p>8 999 163 1929</p>
           </div>
         </div>
